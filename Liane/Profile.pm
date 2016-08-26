@@ -322,27 +322,28 @@ sub do_word_combination_magic {
         next if not $utterance->speaker eq '*KIN';                       
         
         # number of words in this utterance
-        $word_count = scalar( @{ $utterance->analysis->words } );                
-
+        $word_count = scalar( @{ $utterance->analysis->words } );
+        
         # 3 combinations need at least 3 words!
         # 2 combinations need at least 2 words!        
         next if ( ( defined $id3 ) and ( $word_count < 3 ) );        
         next if $word_count < 2;
         
-        for ( my $i = 0; $i < $word_count; $i++ ) {
+        for ( my $i = 0; $i < $word_count; $i++ ) {       
+        
             next if not $utterance->analysis->words->[$i]->$category == $id;
             
             if ( defined $id2 ) {
                 # we don't have to look further, if
                 # the word cannot be within this utterance
-                next if $word_count < $i + 1;
+                next if $word_count < $i + 2;
                 next if not $utterance->analysis->words->[$i+1]->$category == $id2;
             }
             
             if ( defined $id3 ) {
                 # we don't have to look further, if
                 # the words cannot be within this utterance
-                next if $word_count < $i + 2;
+                next if $word_count < $i + 3;
                 next if not $utterance->analysis->words->[$i+2]->$category == $id3;
             }            
             
