@@ -13,6 +13,8 @@ use utf8;
 use Wx::Perl::Packager;
 use Wx;
 
+use lib './';
+
 use Liane::Wx::App;
 
 my $liane = Liane::Wx::App->new->MainLoop;
