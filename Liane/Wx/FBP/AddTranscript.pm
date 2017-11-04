@@ -90,7 +90,7 @@ sub new {
 		Wx::StaticBox->new(
 			$self,
 			-1,
-			"Daten",
+			"Transkript Daten",
 		),
 		wxVERTICAL,
 	);
