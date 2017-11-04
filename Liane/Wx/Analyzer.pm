@@ -53,13 +53,13 @@ sub new {
     $self->{lst_words}->InsertColumn( 1, 'Wörter', wxLIST_FORMAT_LEFT, 145 );
 	
     $self->{btn_ok}->SetBitmap(
-        Wx::Bitmap->new( './Liane/Ressources/save_48.ico', wxBITMAP_TYPE_ICO ) );
+        Wx::Bitmap->new( './Liane/Ressources/save_30.ico', wxBITMAP_TYPE_ICO ) );
 
     $self->{btn_cancel}->SetBitmap(
-        Wx::Bitmap->new( './Liane/Ressources/cancel_48.ico', wxBITMAP_TYPE_ICO ) );
+        Wx::Bitmap->new( './Liane/Ressources/cancel_30.ico', wxBITMAP_TYPE_ICO ) );
 	
 	$self->{btn_help}->SetBitmap(
-        Wx::Bitmap->new( './Liane/Ressources/help_48.ico', wxBITMAP_TYPE_ICO ) );
+        Wx::Bitmap->new( './Liane/Ressources/help_30.ico', wxBITMAP_TYPE_ICO ) );
 	
 	
     ######################################
