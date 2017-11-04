@@ -2,8 +2,8 @@
 
 package main;
 
-$main::VERSION = '1.10';
-$main::DATE    = '08/25/2016';
+$main::VERSION = '1.20';
+$main::DATE    = '11/04/2017';
 
 use strict;
 use warnings;
