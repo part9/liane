@@ -94,7 +94,7 @@ sub new {
 		),
 		wxVERTICAL,
 	);
-	$sbSizer2->Add( $fgSizer3, 0, wxTOP, 5 );
+	$sbSizer2->Add( $fgSizer3, 0, 0, 5 );
 
 	my $bSizer6 = Wx::BoxSizer->new(wxHORIZONTAL);
 	$bSizer6->Add( 0, 0, 1, wxEXPAND, 5 );
