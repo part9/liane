@@ -32,10 +32,10 @@ sub new {
     ######################################
     
     $self->{btn_ok}->SetBitmap(
-        Wx::Bitmap->new( './Liane/Ressources/save_48.ico', wxBITMAP_TYPE_ICO ) );
+        Wx::Bitmap->new( './Liane/Ressources/save_30.ico', wxBITMAP_TYPE_ICO ) );
 
     $self->{btn_cancel}->SetBitmap(
-        Wx::Bitmap->new( './Liane/Ressources/cancel_48.ico', wxBITMAP_TYPE_ICO ) );
+        Wx::Bitmap->new( './Liane/Ressources/cancel_30.ico', wxBITMAP_TYPE_ICO ) );
     
     ######################################
     # EVT handling

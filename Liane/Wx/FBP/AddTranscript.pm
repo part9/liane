@@ -17,7 +17,7 @@ sub new {
 	my $self = $class->SUPER::new(
 		$parent,
 		-1,
-		"Neues Transkript",
+		"Transkript hinzuf\x{fc}gen",
 		wxDefaultPosition,
 		wxDefaultSize,
 		wxDEFAULT_DIALOG_STYLE | wxRESIZE_BORDER,
@@ -58,7 +58,7 @@ sub new {
 		-1,
 		wxNullBitmap,
 		wxDefaultPosition,
-		[ 62, 62 ],
+		[ 40, 40 ],
 		wxBU_AUTODRAW,
 	);
 	$self->{btn_ok}->SetDefault;
@@ -71,7 +71,7 @@ sub new {
 		-1,
 		wxNullBitmap,
 		wxDefaultPosition,
-		[ 62, 62 ],
+		[ 40, 40 ],
 		wxBU_AUTODRAW,
 	);
 	$self->{btn_cancel}->SetToolTip(
@@ -81,10 +81,10 @@ sub new {
 	my $fgSizer3 = Wx::FlexGridSizer->new( 0, 2, 5, 0 );
 	$fgSizer3->SetFlexibleDirection(wxBOTH);
 	$fgSizer3->SetNonFlexibleGrowMode(wxFLEX_GROWMODE_SPECIFIED);
-	$fgSizer3->Add( $self->{m_staticText10}, 0, wxRIGHT | wxLEFT, 20 );
-	$fgSizer3->Add( $self->{m_staticText13}, 0, wxRIGHT | wxLEFT, 20 );
-	$fgSizer3->Add( $self->{dat_date}, 0, wxBOTTOM | wxRIGHT | wxLEFT, 20 );
-	$fgSizer3->Add( $self->{txt_situation}, 0, wxBOTTOM | wxRIGHT | wxLEFT, 20 );
+	$fgSizer3->Add( $self->{m_staticText10}, 0, wxTOP | wxRIGHT | wxLEFT, 10 );
+	$fgSizer3->Add( $self->{m_staticText13}, 0, wxTOP | wxRIGHT | wxLEFT, 10 );
+	$fgSizer3->Add( $self->{dat_date}, 0, wxBOTTOM | wxRIGHT | wxLEFT, 10 );
+	$fgSizer3->Add( $self->{txt_situation}, 0, wxBOTTOM | wxRIGHT | wxLEFT, 10 );
 
 	my $sbSizer2 = Wx::StaticBoxSizer->new(
 		Wx::StaticBox->new(
@@ -98,12 +98,12 @@ sub new {
 
 	my $bSizer6 = Wx::BoxSizer->new(wxHORIZONTAL);
 	$bSizer6->Add( 0, 0, 1, wxEXPAND, 5 );
-	$bSizer6->Add( $self->{btn_ok}, 0, wxBOTTOM | wxRIGHT | wxLEFT, 5 );
-	$bSizer6->Add( $self->{btn_cancel}, 0, wxBOTTOM | wxRIGHT | wxLEFT, 5 );
+	$bSizer6->Add( $self->{btn_ok}, 0, wxALL, 5 );
+	$bSizer6->Add( $self->{btn_cancel}, 0, wxTOP | wxBOTTOM | wxLEFT, 5 );
 
 	my $bSizer5 = Wx::BoxSizer->new(wxVERTICAL);
-	$bSizer5->Add( $sbSizer2, 0, wxALL, 20 );
-	$bSizer5->Add( $bSizer6, 1, wxEXPAND | wxBOTTOM | wxRIGHT | wxLEFT, 20 );
+	$bSizer5->Add( $sbSizer2, 0, wxTOP | wxRIGHT | wxLEFT, 10 );
+	$bSizer5->Add( $bSizer6, 1, wxEXPAND | wxRIGHT | wxLEFT, 10 );
 
 	$self->SetSizerAndFit($bSizer5);
 	$self->Layout;
