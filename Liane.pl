@@ -2,7 +2,7 @@
 
 package main;
 
-$main::VERSION = '1.20';
+$main::VERSION = '1.21';
 $main::DATE    = '11/04/2017';
 
 use strict;

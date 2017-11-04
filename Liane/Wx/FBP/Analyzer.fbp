@@ -44,8 +44,8 @@
             <property name="minimum_size"></property>
             <property name="name">Analyzer</property>
             <property name="pos"></property>
-            <property name="size">920,704</property>
-            <property name="style">wxDEFAULT_DIALOG_STYLE</property>
+            <property name="size">1000,699</property>
+            <property name="style">wxDEFAULT_DIALOG_STYLE|wxMAXIMIZE_BOX|wxRESIZE_BORDER</property>
             <property name="subclass"></property>
             <property name="title">Transkriptanalyse</property>
             <property name="tooltip"></property>
@@ -3457,7 +3457,7 @@
                 <object class="sizeritem" expanded="1">
                     <property name="border">10</property>
                     <property name="flag"></property>
-                    <property name="proportion">0</property>
+                    <property name="proportion">1</property>
                     <object class="wxBoxSizer" expanded="1">
                         <property name="minimum_size"></property>
                         <property name="name">bSizer7</property>
@@ -3597,7 +3597,7 @@
                         <object class="sizeritem" expanded="0">
                             <property name="border">5</property>
                             <property name="flag">wxEXPAND</property>
-                            <property name="proportion">0</property>
+                            <property name="proportion">1</property>
                             <object class="wxBoxSizer" expanded="0">
                                 <property name="minimum_size"></property>
                                 <property name="name">bSizer5</property>
@@ -3606,7 +3606,7 @@
                                 <object class="sizeritem" expanded="0">
                                     <property name="border">10</property>
                                     <property name="flag">wxEXPAND|wxALL</property>
-                                    <property name="proportion">0</property>
+                                    <property name="proportion">1</property>
                                     <object class="wxStaticBoxSizer" expanded="0">
                                         <property name="id">wxID_ANY</property>
                                         <property name="label">(B) Analyse auf Wortebene</property>
@@ -3747,7 +3747,7 @@
                                                 </object>
                                                 <object class="sizeritem" expanded="0">
                                                     <property name="border">10</property>
-                                                    <property name="flag">wxEXPAND|wxTOP|wxBOTTOM|wxRIGHT</property>
+                                                    <property name="flag">wxTOP|wxBOTTOM|wxRIGHT|wxEXPAND</property>
                                                     <property name="proportion">1</property>
                                                     <object class="wxStaticBoxSizer" expanded="0">
                                                         <property name="id">wxID_ANY</property>
@@ -3760,7 +3760,7 @@
                                                         <event name="OnUpdateUI"></event>
                                                         <object class="sizeritem" expanded="0">
                                                             <property name="border">10</property>
-                                                            <property name="flag">wxEXPAND|wxALL</property>
+                                                            <property name="flag">wxALL|wxEXPAND</property>
                                                             <property name="proportion">1</property>
                                                             <object class="wxFlexGridSizer" expanded="0">
                                                                 <property name="cols">4</property>
@@ -7680,6 +7680,16 @@
                             <property name="border">5</property>
                             <property name="flag">wxEXPAND</property>
                             <property name="proportion">0</property>
+                            <object class="spacer" expanded="1">
+                                <property name="height">0</property>
+                                <property name="permission">protected</property>
+                                <property name="width">0</property>
+                            </object>
+                        </object>
+                        <object class="sizeritem" expanded="1">
+                            <property name="border">5</property>
+                            <property name="flag">wxEXPAND</property>
+                            <property name="proportion">0</property>
                             <object class="wxBoxSizer" expanded="1">
                                 <property name="minimum_size"></property>
                                 <property name="name">bSizer91</property>
@@ -7697,7 +7707,7 @@
                                 </object>
                                 <object class="sizeritem" expanded="0">
                                     <property name="border">10</property>
-                                    <property name="flag">wxRIGHT</property>
+                                    <property name="flag">wxBOTTOM|wxRIGHT</property>
                                     <property name="proportion">0</property>
                                     <object class="wxBitmapButton" expanded="0">
                                         <property name="BottomDockable">1</property>
@@ -7790,7 +7800,7 @@
                                 </object>
                                 <object class="sizeritem" expanded="0">
                                     <property name="border">10</property>
-                                    <property name="flag">wxRIGHT</property>
+                                    <property name="flag">wxBOTTOM|wxRIGHT</property>
                                     <property name="proportion">0</property>
                                     <object class="wxBitmapButton" expanded="0">
                                         <property name="BottomDockable">1</property>
@@ -7883,7 +7893,7 @@
                                 </object>
                                 <object class="sizeritem" expanded="0">
                                     <property name="border">10</property>
-                                    <property name="flag">wxRIGHT</property>
+                                    <property name="flag">wxBOTTOM|wxRIGHT</property>
                                     <property name="proportion">0</property>
                                     <object class="wxBitmapButton" expanded="0">
                                         <property name="BottomDockable">1</property>

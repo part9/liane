@@ -18,8 +18,8 @@ sub new {
 		-1,
 		"Transkriptanalyse",
 		wxDefaultPosition,
-		[ 920, 704 ],
-		wxDEFAULT_DIALOG_STYLE,
+		[ 1000, 699 ],
+		wxDEFAULT_DIALOG_STYLE | wxMAXIMIZE_BOX | wxRESIZE_BORDER,
 	);
 
 	$self->{rad_structure_none} = Wx::RadioButton->new(
@@ -888,11 +888,11 @@ sub new {
 		),
 		wxVERTICAL,
 	);
-	$sbSizer5->Add( $fgSizer2, 1, wxEXPAND | wxALL, 10 );
+	$sbSizer5->Add( $fgSizer2, 1, wxALL | wxEXPAND, 10 );
 
 	my $bSizer15 = Wx::BoxSizer->new(wxHORIZONTAL);
 	$bSizer15->Add( $sbSizer51, 0, wxEXPAND | wxALL, 10 );
-	$bSizer15->Add( $sbSizer5, 1, wxEXPAND | wxTOP | wxBOTTOM | wxRIGHT, 10 );
+	$bSizer15->Add( $sbSizer5, 1, wxTOP | wxBOTTOM | wxRIGHT | wxEXPAND, 10 );
 
 	my $fgSizer3 = Wx::FlexGridSizer->new( 0, 6, 0, 0 );
 	$fgSizer3->SetFlexibleDirection(wxBOTH);
@@ -964,22 +964,23 @@ sub new {
 	$siz_words->Add( $sbSizer7, 0, wxEXPAND | wxBOTTOM | wxRIGHT | wxLEFT, 10 );
 
 	my $bSizer5 = Wx::BoxSizer->new(wxHORIZONTAL);
-	$bSizer5->Add( $siz_words, 0, wxEXPAND | wxALL, 10 );
+	$bSizer5->Add( $siz_words, 1, wxEXPAND | wxALL, 10 );
 
 	my $bSizer91 = Wx::BoxSizer->new(wxHORIZONTAL);
 	$bSizer91->Add( 0, 0, 1, wxEXPAND, 5 );
-	$bSizer91->Add( $self->{btn_ok}, 0, wxRIGHT, 10 );
-	$bSizer91->Add( $self->{btn_cancel}, 0, wxRIGHT, 10 );
-	$bSizer91->Add( $self->{btn_help}, 0, wxRIGHT, 10 );
+	$bSizer91->Add( $self->{btn_ok}, 0, wxBOTTOM | wxRIGHT, 10 );
+	$bSizer91->Add( $self->{btn_cancel}, 0, wxBOTTOM | wxRIGHT, 10 );
+	$bSizer91->Add( $self->{btn_help}, 0, wxBOTTOM | wxRIGHT, 10 );
 
 	my $bSizer7 = Wx::BoxSizer->new(wxVERTICAL);
 	$bSizer7->Add( $bSizer9, 0, wxEXPAND, 20 );
-	$bSizer7->Add( $bSizer5, 0, wxEXPAND, 5 );
+	$bSizer7->Add( $bSizer5, 1, wxEXPAND, 5 );
+	$bSizer7->Add( 0, 0, 0, wxEXPAND, 5 );
 	$bSizer7->Add( $bSizer91, 0, wxEXPAND, 5 );
 
 	my $siz_main = Wx::BoxSizer->new(wxHORIZONTAL);
 	$siz_main->Add( $sbSizer71, 0, wxALL, 10 );
-	$siz_main->Add( $bSizer7, 0, 0, 10 );
+	$siz_main->Add( $bSizer7, 1, 0, 10 );
 
 	$self->SetSizer($siz_main);
 	$self->Layout;
