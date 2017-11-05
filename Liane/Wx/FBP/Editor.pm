@@ -19,7 +19,7 @@ sub new {
 		-1,
 		"Transkript Editor",
 		wxDefaultPosition,
-		[ 815, 610 ],
+		[ 850, 610 ],
 		wxDEFAULT_DIALOG_STYLE | wxMAXIMIZE_BOX | wxMINIMIZE_BOX | wxRESIZE_BORDER,
 	);
 
