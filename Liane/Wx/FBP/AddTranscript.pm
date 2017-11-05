@@ -41,7 +41,7 @@ sub new {
 		Wx::DateTime->new,
 		wxDefaultPosition,
 		[ 130, -1 ],
-		wxDP_ALLOWNONE | wxDP_DEFAULT,
+		wxDP_DEFAULT,
 	);
 
 	$self->{txt_situation} = Wx::TextCtrl->new(

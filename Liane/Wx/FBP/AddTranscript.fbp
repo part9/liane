@@ -337,7 +337,7 @@
                                         <property name="resize">Resizable</property>
                                         <property name="show">1</property>
                                         <property name="size">130,-1</property>
-                                        <property name="style">wxDP_ALLOWNONE|wxDP_DEFAULT</property>
+                                        <property name="style">wxDP_DEFAULT</property>
                                         <property name="subclass"></property>
                                         <property name="toolbar_pane">0</property>
                                         <property name="tooltip"></property>
