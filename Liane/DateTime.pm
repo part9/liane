@@ -18,7 +18,7 @@ use Date::Parse;
 sub wxdt2tt {
     my $date =  shift;
 
-    my $time_t = str2time($date->FormatDate() . ' ' . $date->FormatTime());
+    my $time_t = str2time($date->FormatISODate() . ' ' . $date->FormatISOTime());
     
     return $time_t;
 }
