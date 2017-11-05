@@ -40,7 +40,7 @@ sub new {
 		-1,
 		Wx::DateTime->new,
 		wxDefaultPosition,
-		wxDefaultSize,
+		[ 130, -1 ],
 		wxDP_DEFAULT,
 	);
 
