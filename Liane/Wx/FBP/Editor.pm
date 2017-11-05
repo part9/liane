@@ -19,8 +19,8 @@ sub new {
 		-1,
 		"Transkript Editor",
 		wxDefaultPosition,
-		[ 797, 567 ],
-		wxDEFAULT_DIALOG_STYLE,
+		[ 815, 610 ],
+		wxDEFAULT_DIALOG_STYLE | wxMAXIMIZE_BOX | wxMINIMIZE_BOX | wxRESIZE_BORDER,
 	);
 
 	$self->{m_staticText2} = Wx::StaticText->new(
@@ -227,7 +227,7 @@ sub new {
 		),
 		wxVERTICAL,
 	);
-	$sbSizer3->Add( $self->{m_staticText5}, 0, wxALL, 10 );
+	$sbSizer3->Add( $self->{m_staticText5}, 1, wxALL | wxEXPAND, 10 );
 
 	my $bSizer71 = Wx::BoxSizer->new(wxVERTICAL);
 	$bSizer71->Add( $sbSizer3, 1, wxEXPAND | wxTOP | wxRIGHT | wxLEFT, 10 );
@@ -244,6 +244,7 @@ sub new {
 	my $siz_main = Wx::BoxSizer->new(wxVERTICAL);
 	$siz_main->Add( $siz_data, 0, wxEXPAND | wxTOP | wxRIGHT | wxLEFT, 10 );
 	$siz_main->Add( $bSizer7, 0, wxEXPAND, 10 );
+	$siz_main->Add( 0, 0, 1, wxEXPAND, 5 );
 	$siz_main->Add( $bSizer5, 1, wxEXPAND | wxRIGHT | wxLEFT, 10 );
 
 	$self->SetSizer($siz_main);
